@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#head {
+  width: 100%;
+  height: 570px;
+  background: url("https://static.wixstatic.com/media/11062b_b75407a670324c39babd882c6c01d983f000.jpg/v1/fill/w_1263,h_505,al_c,q_85,usm_0.33_1.00_0.00,enc_auto/11062b_b75407a670324c39babd882c6c01d983f000.jpg");
+  background-size: cover;
+}
+
+.header {
+  padding: 70px 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.logo {
+  width: 130px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    transform: scale(2, 2);
+  }
+}
+
+h4 {
+  font-size: 35px;
+}
+h4:hover {
+  font-size: 37px;
+  color: rgb(174, 0, 0);
+}
+.albums:hover {
+  width: 250px;
+  height: 250px;
+}
+.wellcome {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+h1,
+h2,
+h3,
+h5,
+p {
+  color: rgb(52, 51, 51);
+}
+h2 {
+  margin: 70px;
+  font-size: 66px;
+  text-align: center;
+}
+.wellcome p {
+  font-size: 26px;
+  text-align: center;
+}
+h3 {
+  font-size: 35px;
+  text-align: center;
+  margin: 25px;
+}
+.wellcome_photo {
+  margin-top: 55px;
+  width: 100%;
+  height: 570px;
+}
+.albums_item {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.albums {
+  width: 240px;
+  height: 240px;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+h4 {
+  text-align: center;
+}
+.end {
+  margin-top: 100px;
+  width: 100%;
+  height: 570px;
+}
+.footer {
+  width: 100%;
+  background: #343434;
+}
+
+.footer-box {
+  display: flex;
+  column-gap: 190px;
+  padding-top: 80px;
+  justify-content: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 24px;
+  padding-bottom: 80px;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+}
+
+.footer-sub {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+}
+
+.footer-but {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 50px;
+  border-radius: 7px;
+  border: 0;
+}
+.footer-end-icon {
+  display: flex;
+  column-gap: 24px;
+}
+
+.footer-end-but {
+  width: 32px;
+  height: 32px;
+  background: #ffffff85;
+  border: 0;
+  border-radius: 100%;
+}
+h6 {
+  color: white;
+  font-size: 26px;
+}
+.footer-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 125px;
+  border-top: 1px solid #ffffff91;
+  color: #d9dbe1;
+  font-size: 14px;
+  line-height: 14px;
+}
+#burger {
+  display: none;
+}
+
+@media all and (max-width: 1090px) {
+  .footer-end-icon {
+    display: none;
+  }
+  .footer-end-title {
+    font-size: 14px;
+  }
+  .footer-menu > a {
+    display: none;
+  }
+  .footer-end {
+    height: 70px;
+  }
+  .footer-box {
+    display: block;
+    padding-top: 50px;
+    margin: 46px;
+  }
+  .container {
+    border-radius: 0px;
+  }
+}
+@media all and (max-width: 320px) {
+  .wellcome p {
+    max-width: 100%;
+    font-size: 11px;
+  }
+  .wellcome h3,
+  h2 {
+    max-width: 100%;
+    font-size: 13px;
+  }
+  .wellcome-about {
+    max-width: 100%;
+  }
+  h4 {
+    display: none;
+  }
+  .header {
+    padding: 0px 28px 0px;
+  }
+  .logo {
+    width: 50px;
+  }
+  #burger {
+    display: block;
+    width: 23%;
+    height: 23%;
+    margin-top: 22px;
+  }
+}
